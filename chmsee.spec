@@ -2,7 +2,7 @@ Summary:	HTML Help viewer for Unix/Linux
 Summary(pl.UTF-8):	Przeglądarka plików HTML Help dla systemów Unix/Linux
 Name:		chmsee
 Version:	1.3.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	http://chmsee.googlecode.com/files/%{name}-%{version}.tar.gz
@@ -21,8 +21,10 @@ BuildRequires:	nspr-devel
 BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	xulrunner-devel >= 1.9
-Requires:	chmlib >= 0.39
 Requires(post,postun):	desktop-file-utils
+Requires(post,postun):	gtk-update-icon-cache
+Requires(post,postun):	hicolor-icon-theme
+Requires:	chmlib >= 0.39
 Requires:	glib2 >= 1:2.22
 Requires:	gtk+2 >= 2:2.20
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
