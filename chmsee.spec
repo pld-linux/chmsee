@@ -10,7 +10,7 @@ Source0:	http://chmsee.googlecode.com/files/%{name}-%{version}.tar.gz
 URL:		http://code.google.com/p/chmsee/
 BuildRequires:	chmlib-devel >= 0.39
 BuildRequires:	cmake >= 2.8
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.22
 BuildRequires:	gtk+2-devel >= 2:2.20
 BuildRequires:	intltool
